@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Connor's Website</title>
+    <link rel="shortcut icon" type="image/ico" href="./favicon.ico"/>
+    <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.min.css" />
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.js" type="text/javascript"></script>
+    <script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+  </head>
+  <body>
+    <div id="menu-bin" class="container"> 
+      <!-- Left Menu / Logo-->
+      <aside class="menu" id="menu">
+        <div class="logo"> 
+          <!--Span name--> 
+          <span>Connor Lenio</span>
+        </div>
+        <!-- Mobile Navigation Trigger--> 
+        <a href="#menu1" class="menu-link">
+          
+        </a> 
+        <!-- Mobile Drop Down-->
+        <div class="dropdown-outer">
+          <div class="horizontal-btn" id="intro">Intro</div>
+          <div class="horizontal-btn" id="experiences">Experiences</div>
+          <div class="horizontal-btn" id="projects">Projects</div>
+          <div class="horizontal-btn" id="skills">Skills</div>
+          <div class="horizontal-btn" id="contact">Contact</div>
+        </div>
+      </aside>
+    </div>
+
+     <div class="main">
+
+      <div class="outer" id="popout">
+        <div class="tab">Resume</div>
+        
+        <div class="middle">
+          <div class="btn-bar">
+            <div class="vert-btn" id="vert1">
+              <div class="btn-text spin text1" id="text1">Intro</div>
+            </div>
+            <div class="vert-btn" id="vert2">
+              <div class="btn-text spin" id="text2">Experiences</div>
+            </div>
+            <div class="vert-btn" id="vert3">
+              <div class="btn-text spin" id="text3">Projects</div>
+            </div>
+            <div class="vert-btn" id="vert4">
+              <div class="btn-text spin" id="text4">Skills</div>
+            </div>
+            <div class="vert-btn" id="vert5">
+              <div class="btn-text spin" id="text5">Contact</div>
+            </div>
+           </div> 
+          <div class="inner mCustomScrollbar" data-mcs-theme="minimal-dark">
+            <div class="content" id="content">
+              <script type="text/javascript">
+                $(document).ready(function() {
+                  $("#content").hide().html(content1).fadeIn('slow');
+                })
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="middle-bg"></div>
+      </div>
+      <div class="click-tab">resume</div>
+      <div class="container">
+
+        <h1 id="main-h1">Connor Lenio</h1>
+        <div class="text-bin">
+          
+          <h3 class="rotate" id="tagline">Lifelong Learner</h3>
+          <h3 class="rotate">Existential Philosopher</h3>
+          <h3 class="rotate">Junior Software Engineer</h3>
+          <h3 class="rotate">Technical Analyst</h3>
+          <h3 class="rotate">Creative Writer</h3>
+          <h3 class="rotate">Critical Thinker</h3>
+          <h3 class="rotate">Personal Trainer</h3>
+          <h3 class="rotate">World Traveler</h3>
+          <h3 class="rotate">Introverted Intuitive Feeler</h3>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer">
+      <h5>&copy2016 Connor Lenio</h5> 
+     
+    </div>
+    <script src="./js/popout.js" type="text/javascript"></script>
+    <script src="./js/rotate.js" type="text/javascript"></script>
+    <script src="./js/vertBtn.js" type="text/javascript"></script>
+    <script src="./js/dropdown.js" type="text/javascript"></script>
+    <script src="./js/dynamicheight.js" type="text/javascript"></script>
+  </body>
+</html>

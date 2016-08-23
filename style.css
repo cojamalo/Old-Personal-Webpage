@@ -1,0 +1,467 @@
+@import url('./css/normalize.css');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comfortaa', sans-serif;
+  overflow: hidden;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+/*Main Interface CSS*/
+#menu-bin {
+  display: none;
+}
+
+.main {
+  height: 734px;
+  background: url(./images/bg.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+#main-h1 {
+  margin: 550px 0px 0px 0;
+  color: white;
+  font-size: 2.5em;
+   
+}
+
+.text-bin h3 {
+  margin-top: 0px;
+  padding: 0px 0px;
+  font-weight: bold;
+  color: #a3aaae;
+  font-style: italic;
+  font-size: 2em;
+
+}
+
+.text-bin {
+  width: 40%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: center;
+  align-content: center;
+  text-align: center;
+  text-overflow: 
+}
+
+.rotate {
+  display: none;
+}
+
+
+.outer {
+   float: right;
+   height: 100%;
+   width: 50em;
+   z-index: 1000;
+   margin-right: 0px;
+   color: #FFFFFF;
+   font-weight: bold;
+   position: relative;
+   
+}
+
+.tab {
+   float: left;
+   position: absolute;
+   margin: 20px 0px 20px;
+   height: 30px;
+   width: 100%;
+   z-index: 1000;
+   background-color: #172845;
+   padding: 0px 0px 0px 100px;
+   color: #FFFFFF;
+   font-size: 22px;
+   font-weight: lighter;
+   text-transform: uppercase;
+   border-radius: 5px;
+   max-width: 720px;
+   cursor: pointer;
+}
+
+.middle {
+   float: right;
+   height: 734px;
+   width: 97%;
+   padding: 50px 0px 0px 20px;
+   color: #FFFFFF;
+   font-weight: bold;
+   position: relative;
+
+   
+}
+
+.middle-bg {
+   float: right;
+   height: 734px;
+   width: 97%;
+   z-index: 100;
+   background-color: #AAA;
+   opacity: 0.4;
+   margin: 0px 0px 0px 20px;
+   color: #FFFFFF;
+   font-weight: bold;
+   position: absolute;
+   max-width: 700px;
+   box-shadow: -2px 0px 5px #000000;
+
+}
+
+.vert-btn {
+  max-height: 137px;
+  height: 18%;
+  width: 50px;
+  float: left;
+  z-index: 1000;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+.vert-btn:hover > .btn-text {
+  color: #242323;
+  opacity: 0.49;
+  background: url(./images/ul.png) repeat-x 100% 100%;
+  cursor: pointer;
+}    
+
+.btn-bar {
+  height: 100%;
+  width: 50px;
+  margin-left: -20px;
+  max-height: 684px;
+  float: left;
+  z-index: 1000;
+
+
+}
+
+.btn-text {
+  z-index: 1000;
+  font-family: Corbel;
+  font-size: 22px;
+  top: 50%;
+  left: 50%;
+  padding-bottom: 5px;
+  position: absolute;
+  opacity: 0;
+  
+
+}
+
+.text1, .vert-btn-hover {
+  color: #242323;
+  opacity: 0.49;
+  background: url(./images/ul.png) repeat-x 100% 100%;
+}
+
+
+.spin {
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+
+.inner {
+   width: 92%;
+   z-index: 1000;
+   max-height: 704px;
+   color: #FFFFFF;
+   position: absolute;
+   right: 0px;
+   border: none;
+   float: right;
+   cursor: pointer;
+ }
+
+ .content {
+  padding-right: 20px;
+   }
+
+.click-tab {
+  float: right;
+  height: 30px;
+  width: 150px;
+  background-color: #172845;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-size: 22px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin: 20px 0px 20px;
+  padding: 0px 0px 0px 30px;
+  display: none;
+  cursor: pointer;
+}
+
+.footer {
+  height: 20px;
+  background-color: #242323;
+  z-index: 3016;
+  position: fixed;
+  width: 100%;
+
+}
+
+.footer h5 {
+  font-size: 0.83em;
+  color: white;
+  margin-top: 2px;
+  margin-right: 50px;
+  float: right;
+  font-family: Corbel;
+}
+
+/*Intro CSS*/
+.shell h1 {
+ margin: 20px 0 0 0; 
+}
+
+.title-clear {
+  width: 100%;
+}
+
+#profile {
+  float: right;
+  width: 40%;
+  margin-left: 10px;
+  margin-bottom: 1000px;
+
+}  
+
+#sig {
+  left: 25px;
+  width: 40%;
+
+}
+
+#name-bottom {
+  clear: left;
+  margin-left: 50px;
+  padding-bottom: 70px;
+}
+
+/*Experiences CSS*/
+.left-info {
+  float: left;
+  width: 75%;
+}
+
+.left-info h1 {
+  font-size: 22px;
+}
+
+.left-info h3 {
+  font-size: 20px;
+  margin-top: -2px;
+  text-indent: 5px;
+  font-style: italic;
+}
+
+.left-info p {
+  margin-left: 20px;
+  
+}
+
+.right-info {
+  float: right;
+  width: 25%;
+}
+
+.date p {
+  float: right;
+}
+
+#date1 {
+  margin-left: 30%;
+  text-align: right;
+}
+
+#date2 {
+  margin-top: -10px;
+  text-align: right;
+}
+
+.image img {
+  width: 100%;
+  max-width: 130px;
+  float: right;
+}
+
+
+/*Scalabiltiy and Fonts CSS*/
+
+@font-face { font-family: Corbel; src: url('./font/corbel.ttf'); }
+@font-face { font-family: FontAwesome; src: url('./font/fontawesome.woff'); }
+
+@media screen and (max-width: 1200px) {
+  .text-bin {
+    top: 588px;
+    left: 0;
+    position: absolute;
+  }
+  #main-h1 {
+    left: 0;
+    position: absolute;
+  }
+
+  .text-bin {
+    max-width: 230px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .outer {
+      width: 700px;
+  }
+}
+
+@media screen and (max-width: 928px) {
+  body {
+    height: 100%;
+  }
+
+  .main, .middle-bg {
+    
+    
+  }
+
+  #main-h1, .text-bin {
+    display: none;
+  }
+
+  .shell h1 {
+    display: block; 
+  }
+
+  .outer {
+    width: auto;
+    float: none;
+    overflow-y: hidden;
+    border: none;
+  }
+
+  .btn-bar {
+    display: none;
+  }
+
+  .tab {
+    display: none;
+  }
+
+  .click-tab {
+    margin-top: 110px;
+    position: fixed;
+    right: 0;
+  }
+
+  .middle-bg {
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    max-width: none;
+  }
+
+  .middle {
+    position: static;
+  }
+
+  .inner {
+    right: auto;
+  }
+/*Added for menu function*/
+  #menu-bin {
+    display: block;
+  }
+
+  .menu {
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        color: white;
+        background: #172845;
+        left: 0px;
+        top: 0px;
+        z-index: 2016;
+  }
+
+  .menu-link, .menu-link:active, .menu-link:focus {
+    display: block;
+    float: right;
+    padding: 8.5px 16px 0 0;
+    font-size: 23px;
+    color: white;
+    text-decoration: none;
+    outline: none;
+  }
+
+  .menu-link:before {
+    content: "\f039";
+    font-family: FontAwesome;
+  }
+
+  .menu-link:hover {
+    color: #999;
+    text-decoration: none;
+  }
+
+  .logo {
+      margin: 0
+  }
+  
+  .logo span {
+      color: #fff;
+      display: block;
+      font-size: 20px;
+      font-weight: 500;
+      float: left;
+      width: 80%;
+      height: 50px;
+      text-align: left;
+      padding: 13px 0 13px 15px;
+  }
+
+  .dropdown-outer {
+    
+    display: none;
+    max-height: 300px;
+
+    
+  }
+
+  .horizontal-btn {
+    background-color: #172845;
+    height: 50px;
+    width: 100%;
+    clear: left;
+    vertical-align: middle;
+    line-height: 50px;  
+  }
+
+  .horizontal-btn:hover {
+  cursor: pointer;
+  outline: 1px solid #999;
+  background-color: #172845;
+    }
+
+  .container {
+    padding: 0 0 0 0;
+  }
+
+#profile {
+  margin-bottom: auto;
+}
+
+
+
+}
