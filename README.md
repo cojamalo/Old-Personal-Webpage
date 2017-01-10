@@ -1,3 +1,4 @@
 # cojamalo.github.io
-My Personal Website
-This the supporting files for my website.
+Completion Date: July, 2016
+
+My very first front end project using basic javascript, html, and css.
